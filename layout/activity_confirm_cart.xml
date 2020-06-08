@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmCartActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="Please confirm your Shipment details"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtcnfrmname"
+        android:hint="Your name"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:layout_below="@+id/txt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtcnfrmnum"
+        android:hint="Your Phone Number"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:layout_below="@+id/edtcnfrmname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtcnfrmaddress"
+        android:hint="Shipment Address"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:layout_below="@+id/edtcnfrmnum"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtcnfrmcity"
+        android:hint="Your City"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:layout_below="@+id/edtcnfrmaddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Confirm"
+        android:textSize="20dp"
+        android:id="@+id/shipmentbutton"
+        android:background="@drawable/buttons"/>
+
+</RelativeLayout>

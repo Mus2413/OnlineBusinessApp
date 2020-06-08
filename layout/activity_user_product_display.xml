@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProductDisplayActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:id="@+id/categorynamerel">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Category name"
+            android:id="@+id/categoryname"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Recyclercategory"
+        android:layout_below="@+id/categorynamerel"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabusercart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/nav_cart" />
+</RelativeLayout>

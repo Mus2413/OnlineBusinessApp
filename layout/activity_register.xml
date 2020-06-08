@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/register1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColor="@color/colordarkcyan"
+       android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:id="@+id/registertxt"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registernameinput"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/registertxt"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColorHint="@color/colorWhite"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerphoneinput"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/registernameinput"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColorHint="@color/colorWhite"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerpassinput"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/registerphoneinput"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColorHint="@color/colorWhite"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_btn"
+        android:layout_below="@+id/registerpassinput"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/buttons"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:text="Create Account" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/not_admin_panel_link_register"
+        android:text="I'm not an  Admin?"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_btn"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorblack"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_marginLeft="25dp"/>
+
+
+</RelativeLayout>
